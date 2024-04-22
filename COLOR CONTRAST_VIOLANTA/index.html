@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Contrast Checker</title>  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="description">
+      <h1 id = "gtitle">COLOR CONTRAST CHECKER</h1>
+      <p id = "shdescrip">This Javascript tool assists you in choosing colors with good contrast for 
+        your web designs. It analyzes two colors you provide and determines how easily readable they 
+        are when placed on top of each other.</p>
+      <p id="myname">#439 - PC 3216 - Programming Languages <br>Joanha L. Violanta</p>
+  </div>    
+    <div class="main">
+      <div class="header">
+      <h1>COLOR CONTRAST</h1>
+        </div>
+    <div class="container">
+      <div class="input-colors">
+        <div class="color-container">
+          <label for="text-color">Text Color:</label>
+          <input type="color" id="text-color" value="#000000" />
+        </div>
+        <div class="color-container">
+          <label for="bg-color">Background Color:</label>
+          <input type="color" id="bg-color" value="#e0e3eb" />
+        </div>
+      </div>
+      <div class="result">
+        <div id="preview">
+          BSCS-DS 3A PRAGRAMMING ACTIVITY
+        </div>
+        <p>Contrast Rate: </p>
+        <p id="rating">Demo Text</p>
+         <button onclick="contrastChecker(this)">Check Contrast</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
